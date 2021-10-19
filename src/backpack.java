@@ -233,7 +233,14 @@ public class backpack {
                     }
 
                     if (choic == 4) {
-
+                        System.out.println("Graded Submission:" );
+                        for (int l=0;l< assnm.size();l++)
+                        {
+                            if (assnm.get(l).get_add_submission().get(l).getMarks()!=0){
+                                System.out.println("Submission:"+ assnm.get(l).getAssn());
+                                System.out.println("Marks scored:"+ assnm.get(l).get_add_submission().get(l).getMarks());
+                            }
+                        }
 
                     }
 
